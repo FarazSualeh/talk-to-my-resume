@@ -73,7 +73,7 @@ export default function AboutPage() {
                       rel="noreferrer"
                       className="text-primary-200 font-semibold hover:underline"
                     >
-                      faraz-sualeh-portfolio.vercel.app
+                      Click here to view my portfolio
                     </a>
                   )}
                 </p>
