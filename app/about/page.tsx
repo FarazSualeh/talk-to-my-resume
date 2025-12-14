@@ -7,33 +7,33 @@ import {
 } from 'lucide-react'
 
 export default function AboutPage() {
-  const sections = [
-    {
-      title: 'Why I Built TalkToMyResume',
-      body:
-        "As a BSc IT student, I constantly saw students — including myself — struggle with resumes. Most resume tools are either too complicated, filled with ads, require paid plans, or handle personal data in unclear ways. I wanted a tool that is fast, transparent, and genuinely helpful. TalkToMyResume was built to let users understand how their resume reads through AI-driven, resume-grounded answers — without unnecessary complexity.",
-    },
-    {
-      title: 'What Problem It Solves',
-      body:
-        "Many students have resumes but don’t know how clearly their experience is communicated. They are unsure what stands out, what feels weak, or what skills are missing for specific roles. Instead of blindly rewriting resumes, TalkToMyResume allows users to directly question their own resume content and receive focused insights grounded only in what they have written.",
-    },
-    {
-      title: 'My Goals With This Project',
-      body:
-        "This project was built as a hands-on learning experience — covering frontend development, backend APIs, file parsing, AI integration, and deployment. Another goal was to create something genuinely useful for students and freshers, while also serving as a meaningful portfolio project rather than a simple demo app.",
-    },
-    {
-      title: 'Future Roadmap',
-      body:
-        "Planned improvements include exportable insights, keyword highlighting, multi-resume comparison, minimal resume templates, better mobile UX, and optional offline support through PWA. The focus will remain on clarity, usefulness, and responsible handling of user data.",
-    },
-    {
-      title: 'My Portfolio',
-      body:
-        "You can explore more of my projects and work here:",
-    },
-  ]
+    const sections = [
+        {
+          title: 'Why I Built TalkToMyResume',
+          body:
+            "While studying IT, I noticed that a lot of students, including myself, struggle with resumes. We write them, rewrite them, and still feel unsure about how they actually sound to others. Most tools I found were either confusing, paid, or unclear about how they handle personal data. I wanted something simple, fast, and honest. That is how TalkToMyResume started."
+        },
+        {
+          title: 'What Problem It Solves',
+          body:
+            "Many students have resumes but do not really understand them. It is hard to tell what stands out, what sounds weak, or whether the content fits a specific role. People often keep editing without knowing what is wrong. This project lets users ask direct questions about their own resume and get answers based only on what they have written."
+        },
+        {
+          title: 'My Goals With This Project',
+          body:
+            "I built this project mainly to learn by building something real. It helped me understand file uploads, text parsing, API design, AI integration, and deployment challenges. At the same time, I wanted it to be useful for students and freshers, not just a demo project sitting in a repository."
+        },
+        {
+          title: 'Future Roadmap',
+          body:
+            "I plan to add features like downloadable insights, keyword highlighting, comparing multiple resumes, and a better mobile experience. I am also interested in exploring offline support using PWA. The goal is to keep improving the tool while keeping it simple and respectful of user data."
+        },
+        {
+          title: 'My Portfolio',
+          body:
+            "You can check out more of my projects and work here:"
+        }
+      ]      
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white flex flex-col">
@@ -49,7 +49,16 @@ export default function AboutPage() {
                 Behind TalkToMyResume
               </h1>
               <p className="text-slate-200/90 text-base md:text-lg max-w-2xl">
-                A resume-grounded AI project built to help students better understand their own experience.
+                A simple project made by{" "}
+                <a
+                    href="https://faraz-sualeh-portfolio.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-primary-200 font-semibold hover:underline"
+                >
+                    Faraz Sualeh
+                </a>{" "}
+                that lets you ask questions about your own resume.
               </p>
             </div>
             <div className="flex justify-start md:justify-end">
