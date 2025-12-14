@@ -66,13 +66,14 @@ export default function Home() {
               </span>
               <h1 className="text-4xl md:text-5xl font-bold text-white">Talk to My Resume</h1>
               <p className="text-lg text-slate-200/90 max-w-2xl">
-                Upload your resume, then ask focused questions. Fully local, no external DBs, answers grounded in your file.
+                Upload your resume and ask focused questions to better understand your experience. <br />
+                Answers are grounded strictly in your resume content with a clean, privacy-conscious flow.
               </p>
               <div className="flex flex-wrap gap-2 text-xs text-slate-200/70">
-                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">PDF / DOCX</span>
-                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">Local JSON storage</span>
-                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">Cosine similarity search</span>
-                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">LLM answers (Gemini/Groq)</span>
+                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">PDF / DOCX parsing</span>
+                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">Resume-aware search</span>
+                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">Upstash Redis storage</span>
+                <span className="px-2 py-1 rounded bg-white/5 border border-white/10">Grounded LLM responses</span>
               </div>
             </div>
             <div className="flex flex-wrap gap-3 justify-start md:justify-end">
@@ -182,8 +183,9 @@ export default function Home() {
           <div className="bg-white/5 border border-white/10 rounded-2xl shadow-xl shadow-black/30 p-8 md:p-10">
             <h2 className="text-2xl font-bold text-white mb-4">About this project</h2>
             <p className="text-slate-200/90 leading-relaxed mb-3">
-              I built this as a student project to combine file parsing, embeddings-free search,
-              and LLM prompting in a privacy-first way. Your resume is stored locally as JSON, and all queries stay here.
+          I built this as a student project to explore file parsing, efficient resume-aware search,
+          and controlled LLM prompting in a privacy-conscious way. The goal is to keep responses
+          grounded in your resume content while avoiding unnecessary data exposure.
             </p>
             <p className="text-slate-200/90 leading-relaxed">
               Want to see more of my work?{' '}

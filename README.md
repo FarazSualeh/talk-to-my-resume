@@ -1,87 +1,83 @@
-# Talk to My Resume
+# Talk To My Resume
 
-A Next.js application that allows you to upload your resume (PDF or DOCX) and ask questions about it using a local cosine-similarity search.
+**Talk To My Resume** is a privacy-focused web application that allows users to upload their resume and ask focused questions to better understand how their experience is presented.
 
-## Features
+Built as a real-world learning project, this tool helps students and freshers explore their resume content through grounded, resume-aware answers instead of generic suggestions.
 
-- 📄 Upload PDF or DOCX resumes
-- 💬 Chat interface to ask questions about your resume
-- 🤖 Powered by Groq LLaMA 3.1 8B for natural language answers
-- 🔍 Local cosine-similarity search for finding relevant information
-- 🔄 Regenerate answers with a single click
-- 🔒 Resume data stored locally (JSON file)
-- 🎨 Beautiful, modern UI with TailwindCSS
+---
 
-## Getting Started
+## 🚀 Features
 
-### Prerequisites
+- 📄 Upload resumes in **PDF / DOCX** format
+- 💬 Ask natural-language questions about your resume
+- 🔍 Resume-grounded answers using similarity search
+- ⚡ Fast and responsive UI
+- 🔒 Transparent data handling (no unnecessary storage)
+- 🎓 Student-built, real-world portfolio project
 
-- Node.js 18+ installed
-- npm or yarn package manager
-- Groq API key (get one at [https://console.groq.com](https://console.groq.com))
+---
 
-### Installation
+## 🧠 How It Works
 
-1. Install dependencies:
-```bash
-npm install
-```
+1. User uploads a resume (PDF or DOCX)
+2. Resume text is parsed and structured
+3. Relevant sections are retrieved using similarity search
+4. AI generates answers **only based on the resume content**
+5. No hallucinated or unrelated information is added
 
-2. Create a `.env.local` file in the root directory and add your Groq API key:
-```bash
-GROQ_API_KEY=your_groq_api_key_here
-```
+---
 
-3. Run the development server:
-```bash
-npm run dev
-```
+## 🛠️ Tech Stack
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+- **Next.js (App Router)**
+- **React + TypeScript**
+- **Tailwind CSS**
+- **Server Actions & API Routes**
+- **AI APIs (Gemini / Groq)**
+- **Upstash Redis**
+- **Vercel Deployment**
 
-## Usage
+---
 
-1. **Upload Resume**: Go to the home page and upload your resume (PDF or DOCX format)
-2. **Ask Questions**: Navigate to the chat page and ask questions about your resume
-3. **Get Answers**: The system will search through your resume and provide relevant answers
+## 🎯 Purpose
 
-## Example Questions
+This project was built to:
+- Learn full-stack development by building a real product
+- Explore AI integration responsibly
+- Help students understand their resume strengths and gaps
+- Serve as a meaningful portfolio project
 
-- "What is my work experience?"
-- "What are my skills?"
-- "What is my education background?"
-- "Tell me about my previous jobs"
-- "What programming languages do I know?"
+---
 
-## Project Structure
+## 🔮 Future Improvements
 
-```
-talk-to-my-resume/
-├── app/
-│   ├── api/
-│   │   ├── upload/      # API route for file upload
-│   │   └── query/       # API route for questions
-│   ├── chat/           # Chat page
-│   ├── layout.tsx       # Root layout
-│   ├── page.tsx         # Home/upload page
-│   └── globals.css      # Global styles
-├── lib/
-│   └── utils.ts         # Utility functions for text processing
-├── data/                # Local storage for resume data (gitignored)
-└── package.json
-```
+- Exportable insight summaries
+- Keyword highlighting
+- Multi-resume comparison
+- Resume templates
+- Improved mobile experience
+- Optional offline support via PWA
 
-## Technologies
+---
 
-- **Next.js 14** - React framework
-- **TypeScript** - Type safety
-- **TailwindCSS** - Styling
-- **pdf-parse** - PDF text extraction
-- **mammoth** - DOCX text extraction
-- **groq-sdk** - Groq API client for LLaMA 3.1 8B model
-- **cosine-similarity** - Local similarity search (custom implementation)
+## 🌐 Live Demo
 
-## License
+🔗 https://talk-to-my-resume.vercel.app
 
-MIT
+---
 
+## 👨‍💻 Author
+
+**Faraz Sualeh**  
+BSc IT Student
+
+- 🌐 Portfolio: https://faraz-sualeh-portfolio.vercel.app  
+- 💻 GitHub: https://github.com/FarazSualeh  
+- 📸 Instagram: https://instagram.com/editsbyfaraz  
+- ✉️ Email: farazsualeh75@gmail.com
+
+---
+
+## 📜 License
+
+This project is open-source and available for learning and educational purposes.
