@@ -92,18 +92,34 @@ export default function Home() {
           </header>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {[
-              { icon: '📄', title: 'Upload Resume', desc: 'PDF / DOCX up to 10MB, parsed locally.' },
-              { icon: '💬', title: 'Ask Anything', desc: 'Grounded answers, no hallucinated sources.' },
-              { icon: '🔒', title: 'Fully Local', desc: 'Text stored as JSON on your device.' },
-            ].map((card) => (
-              <div key={card.title} className="p-6 bg-white/10 border border-white/10 rounded-2xl shadow-lg shadow-black/30 backdrop-blur">
-                <div className="text-3xl mb-3">{card.icon}</div>
-                <h3 className="font-semibold text-white mb-2">{card.title}</h3>
-                <p className="text-sm text-slate-200/90">{card.desc}</p>
-              </div>
-            ))}
-          </div>
+  {[
+    {
+      icon: '📄',
+      title: 'Upload Resume',
+      desc: 'PDF / DOCX up to 10MB, parsed securely on the server.',
+    },
+    {
+      icon: '💬',
+      title: 'Ask Anything',
+      desc: 'Grounded answers strictly based on your uploaded resume.',
+    },
+    {
+      icon: '🔒',
+      title: 'Privacy Aware',
+      desc: 'Resume data is stored securely server-side and used only to answer your questions.',
+    },
+  ].map((card) => (
+    <div
+      key={card.title}
+      className="p-6 bg-white/10 border border-white/10 rounded-2xl shadow-lg shadow-black/30 backdrop-blur"
+    >
+      <div className="text-3xl mb-3">{card.icon}</div>
+      <h3 className="font-semibold text-white mb-2">{card.title}</h3>
+      <p className="text-sm text-slate-200/90">{card.desc}</p>
+    </div>
+  ))}
+</div>
+
 
           <div className="bg-white/10 border border-white/15 rounded-2xl shadow-2xl shadow-black/30 backdrop-blur p-8 md:p-10 mb-12">
             <div className="space-y-6">

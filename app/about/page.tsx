@@ -1,31 +1,37 @@
 'use client'
 
+import {
+  Instagram,
+  Github,
+  Mail,
+} from 'lucide-react'
+
 export default function AboutPage() {
   const sections = [
     {
       title: 'Why I Built TalkToMyResume',
       body:
-        "As a BSc IT student, I constantly saw students — including myself — struggle with resumes. Most resume tools are either too complicated, filled with ads, require paid plans, or upload your personal data to external servers. I wanted a tool that keeps your data private, runs fast, and actually helps you understand how your own resume reads. That's why I built TalkToMyResume: a simple platform that lets your resume explain itself — clearly, safely, and instantly.",
+        "As a BSc IT student, I constantly saw students — including myself — struggle with resumes. Most resume tools are either too complicated, filled with ads, require paid plans, or handle personal data in unclear ways. I wanted a tool that is fast, transparent, and genuinely helpful. TalkToMyResume was built to let users understand how their resume reads through AI-driven, resume-grounded answers — without unnecessary complexity.",
     },
     {
       title: 'What Problem It Solves',
       body:
-        "Many students have resumes, but they don't know how their experience actually sounds to others. They are unsure whether they’re communicating their strengths clearly, what seems weak or unclear, what skills stand out, or what’s missing for specific roles. People keep rewriting their resume without understanding what’s wrong. TalkToMyResume solves this by letting users talk to their resume and explore their own content in an interactive, structured way — without sending data to any external server.",
+        "Many students have resumes but don’t know how clearly their experience is communicated. They are unsure what stands out, what feels weak, or what skills are missing for specific roles. Instead of blindly rewriting resumes, TalkToMyResume allows users to directly question their own resume content and receive focused insights grounded only in what they have written.",
     },
     {
       title: 'My Goals With This Project',
       body:
-        "I built this project to learn by doing — from web development to file handling, UI/UX design, and creating a smooth interactive experience. Another goal is to help students and freshers who struggle with understanding their resume quality. I also wanted a portfolio project that solves a real problem instead of being just a simple demo.",
+        "This project was built as a hands-on learning experience — covering frontend development, backend APIs, file parsing, AI integration, and deployment. Another goal was to create something genuinely useful for students and freshers, while also serving as a meaningful portfolio project rather than a simple demo app.",
     },
     {
       title: 'Future Roadmap',
       body:
-        "I plan to add features like exportable insight summaries, keyword highlighting, multi-resume comparison, minimal resume templates, improved mobile UI, and eventually offline support through PWA. These additions will make the tool even more practical and privacy-focused while keeping everything simple and efficient.",
+        "Planned improvements include exportable insights, keyword highlighting, multi-resume comparison, minimal resume templates, better mobile UX, and optional offline support through PWA. The focus will remain on clarity, usefulness, and responsible handling of user data.",
     },
     {
       title: 'My Portfolio',
       body:
-        "Check my portfolio to see more of my work and projects.",
+        "You can explore more of my projects and work here:",
     },
   ]
 
@@ -43,8 +49,7 @@ export default function AboutPage() {
                 Behind TalkToMyResume
               </h1>
               <p className="text-slate-200/90 text-base md:text-lg max-w-2xl">
-                A privacy-first resume Q&amp;A tool designed and built as a real-world learning
-                project.
+                A resume-grounded AI project built to help students better understand their own experience.
               </p>
             </div>
             <div className="flex justify-start md:justify-end">
@@ -73,7 +78,7 @@ export default function AboutPage() {
                       rel="noreferrer"
                       className="text-primary-200 font-semibold hover:underline"
                     >
-                      Click here to view my portfolio
+                      View my portfolio
                     </a>
                   )}
                 </p>
@@ -88,33 +93,36 @@ export default function AboutPage() {
 
       {/* Footer */}
       <footer className="border-t border-white/10 bg-slate-950/60">
-        <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs md:text-sm text-slate-300">
+        <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs md:text-sm text-slate-300">
           <p>© 2025 Faraz Sualeh. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+
+          <div className="flex items-center gap-5">
             <a
               href="https://instagram.com/editsbyfaraz"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1 text-slate-300 hover:text-white transition"
+              aria-label="Instagram"
+              className="hover:text-white transition"
             >
-              <span className="text-lg">📸</span>
-              <span>@editsbyfaraz</span>
+              <Instagram size={18} />
             </a>
+
             <a
               href="https://github.com/FarazSualeh"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1 text-slate-300 hover:text-white transition"
+              aria-label="GitHub"
+              className="hover:text-white transition"
             >
-              <span className="text-lg">💻</span>
-              <span>FarazSualeh</span>
+              <Github size={18} />
             </a>
+
             <a
               href="mailto:farazsualeh75@gmail.com"
-              className="flex items-center gap-1 text-slate-300 hover:text-white transition"
+              aria-label="Email"
+              className="hover:text-white transition"
             >
-              <span className="text-lg">✉️</span>
-              <span>farazsualeh75@gmail.com</span>
+              <Mail size={18} />
             </a>
           </div>
         </div>
