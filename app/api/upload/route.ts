@@ -53,8 +53,9 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // ✅ Store resume in memory (Vercel-safe)
-    saveResumeText(extractedText)
+    // Making it Vercel-safe by using Upstash Redis
+    await saveResumeText(extractedText)
+
 
     return NextResponse.json({
       success: true,
@@ -69,3 +70,4 @@ export async function POST(request: NextRequest) {
     )
   }
 }
+
