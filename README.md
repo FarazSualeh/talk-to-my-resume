@@ -62,7 +62,7 @@ This project was built to:
 
 ## 🌐 Live Demo
 
-🔗 https://talk-to-my-resume.vercel.app
+🔗 https://talktomyresume.vercel.app
 
 ---
 
